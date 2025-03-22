@@ -1,0 +1,23 @@
+.table {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border: 1px dotted gainsboro;
+}
+
+.table--smallPrompt {
+    grid-template-columns: 1fr 3fr;
+}
+
+.cell--centered {
+    text-align: center;
+}
+
+.cell {
+    margin: 0.05rem;
+    background: powderblue;
+    padding: 0.25rem 0.5rem;
+}
+
+.table>.cell:nth-child(2n+2) {
+    background: lemonchiffon;
+}

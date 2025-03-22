@@ -1,0 +1,183 @@
+.toast {
+    top: 5rem;
+    right: 6rem;
+}
+
+.toast>.body {
+    font-size: 1.25em;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+}
+
+.dashboard--student {
+    display: block;
+    padding: 3rem 3rem;
+    line-height: 1.7rem;
+}
+
+/* @media (min-width: 768px) {
+    .dashboard {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 3rem;
+        padding: 0 3rem;
+        grid-auto-flow: column;
+    }
+} */
+
+.dashboard__component {}
+
+.dashboard__cohorts {}
+
+.dashboard__students {}
+
+.feedback {
+    border: 1px dotted cadetblue;
+    padding: 1rem;
+    background-color: rgb(218, 230, 247);
+}
+
+.feedback__author {
+    font-size: x-small;
+    padding-top: 0.5rem;
+}
+
+.slack {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-column-gap: 3rem;
+    padding: 0 3rem;
+    grid-auto-flow: column;
+}
+
+.slack__input {
+    margin: 1rem 0 0 0;
+    padding: 0.2rem 0.3rem;
+    width: 15rem;
+}
+
+.bfiRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.bfiRow__prompt {
+    text-align: left;
+    flex: 2;
+    max-width: 14rem;
+}
+
+.bfiRow__input {
+    flex: 1;
+}
+
+.bfi__input {
+    max-width: 2.5rem;
+    margin-right: 1rem;
+}
+
+.briggs__input {
+    max-width: 8rem;
+}
+
+.slack__save {
+    margin: 1rem 0 0 0;
+    padding: 0.2rem 0.3rem;
+}
+
+dialog {
+    z-index: 12;
+    width: 70%;
+    top: 10rem;
+}
+
+.dialog--statuses {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 50%;
+}
+
+.statusButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2rem 0 2rem 0;
+}
+
+.statusButton {
+    margin: 0.5rem 1rem;
+    height: 3rem;
+}
+
+.tagButtons {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 2rem 0 2rem 0;
+}
+
+@media (max-width: 1300px) {
+    .tagButtons {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 2rem 0 2rem 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .tagButtons {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 2rem 0 2rem 0;
+    }
+}
+
+.dialog--tags {
+    width: 50%;
+}
+
+.tagDialog__newTag {
+    text-align: center;
+}
+
+.dialog--projects {
+    width: 30%;
+}
+
+.capstonePercent {
+    padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+    background-color: aquamarine;
+    margin: 0 -2rem 0 1rem;
+    text-align: center;
+    font-size: small;
+}
+
+.bookButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2rem 0 2rem 0;
+}
+
+.projectSelect {
+    text-align: center;
+}
+
+.toggle--projects {
+    padding: 0.25rem 1rem;
+    margin: 0 2rem 0 0;
+}
+
+.on {
+    background-color: rgb(201, 255, 119);
+}
+
+.off {
+    background-color: rgb(255, 177, 177);
+}

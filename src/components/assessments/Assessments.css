@@ -1,0 +1,129 @@
+.assessments {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 2rem;
+    font-size: small;
+}
+
+.assessments::after {
+    content: '';
+    flex: 0 1 20%;
+    margin: 0.5rem 1rem;
+    padding: 0rem 1rem 0.5rem 1rem;
+}
+
+.assessment {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 20%;
+    position: relative;
+    margin: 0.5rem 1rem;
+    padding: 0rem 1rem 0.5rem 1rem;
+    border: 1px dotted slateblue;
+    background-color: rgb(254, 256, 255);
+    box-shadow: 0.25rem 0.25rem 0.5rem 0 rgb(180, 179, 179);
+    border-radius: 0.33rem;
+}
+
+.assessment__header {
+    margin: 1.5rem 0 0 0;
+}
+
+.assessment__name {
+    padding: 0.5rem 0 1.5rem 0;
+    font-size: 0.8rem;
+}
+
+.assessment__status {
+    padding: 0 0.75rem;
+    flex: 1;
+}
+
+.assessment__objectives {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.assessment__objectives_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 0 1rem 0;
+}
+
+.assessment__objective {
+    flex: 0 1 20%;
+}
+
+.container--assessmentList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0 5rem;
+}
+
+.container--assessmentForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0 5rem;
+}
+
+.assessment__objectives {
+    margin: 2rem 0;
+}
+
+.assessment__footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+    margin-top: auto;
+    padding-top: 0.5rem;
+    border-top: 1px dotted rgb(137, 188, 188);
+}
+
+.assessment__book {
+    font-size: smaller;
+    text-align: right;
+}
+
+.assessment__statusDropdown {
+    display: flex;
+    justify-content: flex-end;
+    flex: 2;
+}
+
+.button--assessment {
+    cursor: pointer;
+    left: 1rem;
+}
+
+.objective__badge {
+    padding: 0.33rem;
+    background-color: rgb(244, 215, 161);
+    color: black;
+    border-radius: 0.25rem;
+    margin: 0.2rem 0.25rem;
+    font-size: smaller;
+    max-width: 10rem;
+    text-align: center;
+    border: 1px solid rgb(116, 102, 76);
+}
+
+.assessment--inProgress {
+    background-color: lemonchiffon;
+}
+
+.assessment--readyForReview {
+    background-color: rgb(255, 157, 175);
+}
+
+.assessment--reviewedSuccess {
+    background-color: rgb(203, 255, 157);
+}
+
+.assessment--reviewedFail {
+    background-color: rgb(147, 159, 113);
+}

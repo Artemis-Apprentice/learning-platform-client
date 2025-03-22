@@ -1,0 +1,318 @@
+.student {
+    border: 2px dotted rgb(137, 188, 188);
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+    box-shadow: 0.25rem 0.25rem 0.5rem 0 rgb(180, 179, 179);
+    transition: all .2s ease-in-out;
+    margin: 0.75rem auto;
+}
+
+.student--mini {
+    width: initial;
+}
+
+.student--regular {
+    width: 9rem;
+}
+
+.student__header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.student__name {
+    margin: 0 0 0.33rem 0;
+}
+
+.student__name:hover {
+    color: rgb(19, 81, 144);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.student__footer {
+    margin-top: auto;
+    font-size: smaller;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    transition: height 400ms ease 0ms;
+    height: 0;
+    overflow: hidden;
+}
+
+.student__footer.grow {
+    overflow: visible;
+    height: 1rem;
+    border-top: 1px dotted darkslategray;
+    padding: 0.5rem 0 0 0;
+}
+
+.student__info {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 0;
+}
+
+.student__score--mini {
+    font-family: "Patua One", serif;
+    position: absolute;
+    top: -0.4rem;
+    right: -0.8rem;
+    font-size: 0.7rem;
+    color: #4a0d2f;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: #decdd6;
+    padding: 0.1rem;
+    border-radius: 0.7rem;
+    border: 1px solid lightskyblue;
+}
+
+.student__proposals {
+    position: absolute;
+    top: 0rem;
+    left: -0.8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.student__score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: firebrick;
+    color: rgb(255, 209, 209);
+    padding: 0.5rem 1.25rem;
+    font-size: 1.3rem;
+    text-align: center;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.button--record {
+    margin: 1rem 0;
+}
+
+.student__details {
+    font-size: 0.7rem;
+    display: flex;
+}
+
+.student__github {
+    flex: 2;
+}
+
+.student__cohort {
+    flex: 1;
+}
+
+.persona {
+    display: flex;
+    flex-direction: row;
+}
+
+.section--persona {
+    padding: 0 1rem;
+}
+
+.persona__myers-briggs {
+    flex: 3;
+}
+
+.persona__bfi {
+    flex: 2;
+}
+
+.personality-- {
+    background-color: rgb(219, 234, 237);
+}
+
+.personality--Analyst {
+    background-color: #e0c8e9;
+}
+
+.personality--Sentinel {
+    background-color: #aedced;
+}
+
+.personality--Explorer {
+    background-color: #f9e7c1;
+}
+
+.personality--Diplomat {
+    background-color: #c2f0dd;
+}
+
+
+.student--takingAssessment {
+    border: 2px solid rgb(251, 255, 30);
+}
+
+.student--assessmentReviewNeeded {
+    border: 2px solid rgb(231, 52, 20);
+}
+
+.student--assessReviewIncomplete {
+    border: 2px solid rgb(211, 14, 198);
+}
+
+.student--assessReviewComplete {
+    border: 2px solid rgb(19, 241, 78);
+}
+
+.student__actions {
+    display: none;
+    flex-wrap: nowrap;
+    border-bottom: 1px dotted darkgreen;
+}
+
+
+.action {
+    flex: 0 0 20%;
+}
+
+.student__coreskills {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-size: smaller;
+    margin: 0 0 1rem 0;
+    margin-top: auto;
+}
+
+.student__tags {
+    margin-top: auto;
+    border-top: 1px dotted darkslategray;
+    padding: 0.5rem 0 0 0;
+    font-size: smaller;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer__score {
+    margin: 0;
+    line-height: 0;
+}
+
+.student__project {
+    font-size: smaller;
+    padding: 0 0 0.33rem 0;
+}
+
+.student__book {
+    font-size: smaller;
+}
+
+.student--tag {
+    padding: 0.1rem 0.33rem;
+    background-color: #e3c0ce;
+    color: black;
+    border-radius: 0.25rem;
+    margin: 0.2rem 0.33rem;
+    font-size: 0.75rem;
+}
+
+
+.tag__name {
+    font-size: 0.55rem;
+    padding-left: 0;
+}
+
+
+.overlay--student {
+    animation: createBox .25s;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255);
+    z-index: 2;
+}
+
+@keyframes createBox {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.close {
+    position: relative;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px dotted white;
+}
+
+.close:hover {
+    border: 1px dotted rgb(62, 62, 62);
+
+}
+
+.close:hover::before, .close:hover::after {
+    background: #1ebcc5;
+}
+
+.close::before, .close::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: rgb(131, 130, 130);
+}
+
+.close::before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.close::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.close.hairline::before, .close.hairline::after {
+    height: 1px;
+}
+
+.svg {
+    cursor: pointer;
+    margin-left: 0.33rem;
+    height: 0.9rem
+}
+
+.section--notes {
+    padding: 0 2rem;
+    max-height: 10rem;
+    overflow: scroll;
+    border: 1px dotted lightsteelblue;
+}
+
+.section--proposals {
+    padding: 0 2rem;
+}
+

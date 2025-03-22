@@ -1,0 +1,72 @@
+.teamsconfig {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0 1rem 0;
+}
+
+.teamsconfig button {
+    padding: 0.2rem 0.3rem;
+}
+
+.teamsconfig__prefix {
+    padding: 0.2rem 0.3rem;
+    width: 8rem;
+}
+
+.teamsconfig__count {
+    width: 3rem;
+    margin-right: 0.75rem;
+}
+
+.teamsconfig__auto {
+    margin-left: auto;
+    margin-right: 0.75rem;
+}
+
+.teamsconfig__clear {
+    margin-left: 0.75rem;
+}
+
+.teams {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.team {
+    padding: 1rem;
+    margin: 0 25%;
+    border: 1px dashed slategrey;
+    border-radius: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    margin: 0.5rem 1rem;
+    flex-basis: 20%;
+    min-height: 5rem;
+    position: relative;
+}
+
+.student--badge {
+    padding: 0.33rem;
+    background-color: rgb(228, 158, 28);
+    color: black;
+    border-radius: 0.25rem;
+    margin: 0.33rem 0;
+    font-size: 0.75rem;
+}
+
+.students--teambuilder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.icon--slack {
+    height: 1rem;
+    width: 1rem;
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    cursor: pointer;
+}

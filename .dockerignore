@@ -1,0 +1,16 @@
+# dependencies
+node_modules
+
+# build artifacts
+build
+
+# local env
+.env
+.env.*
+
+# misc
+.git
+.gitignore
+.DS_Store
+.vscode
+.github

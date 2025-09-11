@@ -1,0 +1,41 @@
+version: "3.9"
+services:
+  api:
+    build: ./api
+    # or: image: myorg/api:latest
+    ports:
+      - "8000:8000"           # expose to your host (optional for local dev)
+    environment:
+      - PORT=8000
+    networks:
+      - appnet
+
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: appdb
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - appnet
+
+  client:
+    build: ./client
+    # or: image: myorg/client:latest
+    environment:
+      # 👇 Use the API service name as host:
+      - API_BASE_URL=http://api:8000
+    ports:
+      - "3000:3000"           # whatever your client serves on
+    depends_on:
+      - api
+    networks:
+      - appnet
+
+networks:
+  appnet:
+
+volumes:
+  pgdata:

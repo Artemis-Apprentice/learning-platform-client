@@ -17,6 +17,17 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.vscode*
+
+.roo*
+.roo/
+.roomodes
+.context_portal*
+
+generate_mcp_yaml.py
+install_rooflow_conport.cmd
+install_rooflow_conport.sh
+roo_code_conport_strategy
 
 npm-debug.log*
 yarn-debug.log*

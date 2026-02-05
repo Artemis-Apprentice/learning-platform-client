@@ -34,7 +34,7 @@ jobs:
           username: ${{ secrets.DO_USERNAME }}
           key: ${{ secrets.DO_SSH_KEY }}
           source: "build/*"  # or "dist/*" depending on your build output
-          target: "/var/www/your-app"
+          target: "/usr/share/nginx/html"
           strip_components: 1
       
       - name: Restart Nginx (optional)
